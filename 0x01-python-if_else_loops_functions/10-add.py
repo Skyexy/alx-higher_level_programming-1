@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-
-for i in range(99):
-    print("{:d} = 0x{:x}".format(i, i))
+def add(a, b):
+    """Return the addition of a and b"""
+    return (a + b)
