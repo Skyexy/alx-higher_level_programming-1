@@ -12,7 +12,7 @@ that value is equivalent to using the ``+`` operator.
 
 ::
 
-    >>> add_integer = __import__(0-add_integer).add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
     >>> add_integer(2, 3)
     5
 
@@ -97,14 +97,14 @@ The function will fail if infinity is provided.
 
 ::
 
-    >>> add_integer(float(inf))
+    >>> add_integer(float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
      
 
 ::
 
-    >>> add_integer(2, float(inf))
+    >>> add_integer(2, float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
@@ -112,12 +112,12 @@ And again with NaN numbers.
 
 ::
 
-    >>> add_integer(float(nan))
+    >>> add_integer(float('nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
 
 ::
 
-    >>> add_integer(2, float(nan))
+    >>> add_integer(2, float('nan'))
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
