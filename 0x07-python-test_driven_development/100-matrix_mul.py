@@ -45,7 +45,7 @@ def matrix_mul(m_a, m_b):
         raise TypeError("each row of m_b must should be of the same size")
 
     if len(m_a[0]) != len(m_b):
-        raise ValueError("m_a and m_b cant be multiplied)
+        raise ValueError("m_a and m_b cant be multiplied")
 
     inverted_b = []
     for r in range(len(m_b[0])):
@@ -64,5 +64,4 @@ def matrix_mul(m_a, m_b):
             new_row.append(prod)
         new_matrix.append(new_row)
 
-    return new_matrix' > 100-matrix_mul.py
-
+    return new_matrix
