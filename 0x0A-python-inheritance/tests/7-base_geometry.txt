@@ -5,7 +5,7 @@ Using ``BaseGeometry``
 ----------------------
 
 Importing class from the module:
-    >>> BaseGeometry = __import__(7-base_geometry).BaseGeometry
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 Trying to print the area
@@ -58,14 +58,14 @@ Passing one argument to integer_validator
     >>> bg.integer_validator("name")
     Traceback (most recent call last):
     1-my_list.txt       ...
-    TypeError: integer_validator() missing 1 required positional argument: value
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 Integer_validator with no arguments
     >>> bg = BaseGeometry()
     >>> bg.integer_validator()
     Traceback (most recent call last):
     1-my_list.txt       ...
-    TypeError: integer_validator() missing 2 required positional arguments: name and value
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 
 Passing three arguments to integer_validator
