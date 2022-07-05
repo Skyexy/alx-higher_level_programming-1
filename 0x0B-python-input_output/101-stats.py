@@ -12,14 +12,14 @@ class Magic:
 
     def init_dic(self):
         """ Initialize dict """
-        self.dic[200] = 0
-        self.dic[301] = 0
-        self.dic[400] = 0
-        self.dic[401] = 0
-        self.dic[403] = 0
-        self.dic[404] = 0
-        self.dic[405] = 0
-        self.dic[500] = 0
+        self.dic['200'] = 0
+        self.dic['301'] = 0
+        self.dic['400'] = 0
+        self.dic['401'] = 0
+        self.dic['403'] = 0
+        self.dic['404'] = 0
+        self.dic['405'] = 0
+        self.dic['500'] = 0
 
     def add_status_code(self, status):
         """ add repeated number to the status code """
