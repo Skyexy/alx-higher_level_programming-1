@@ -180,7 +180,7 @@ class TestSquare(unittest.TestCase):
             Test update() with both args and kwargs
         """
         sq1 = Square(1)
-        sq1.update(2, 4, **{x: 3, y: 4})
+        sq1.update(2, 4, **{'x': 3, 'y': 4})
         self.assertEqual(sq1.__str__(), "[Square] (2) 0/0 - 4")
 
     def test_create_dict_equal(self):
