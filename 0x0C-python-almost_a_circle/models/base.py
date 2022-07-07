@@ -88,7 +88,7 @@ class Base:
         fname = cls.__name__ + ".json"
 
         try:
-            with open(fname, encoding=utf8) as jfile:
+            with open(fname, encoding='utf8') as jfile:
                 content = cls.from_json_string(jfile.read())
         except:
             return []
@@ -129,10 +129,10 @@ class Base:
 
         with open(fname, "r") as cfile:
             if cls.__name__ == "Rectangle":
-               reader = csv.DictReader(cfile, fieldnames={id,width,
-                                                          height, x, y})
+               reader = csv.DictReader(cfile, fieldnames={'id','width',
+                                                          'height', 'x', 'y'})
             elif cls.__name__ == "Square":
-               reader = csv.DictReader(cfile, fieldnames={id, size, x, y})
+               reader = csv.DictReader(cfile, fieldnames={'id', 'size', 'x', 'y'})
 
             instances = []
             for instance in reader:
