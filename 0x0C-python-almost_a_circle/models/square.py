@@ -68,7 +68,7 @@ class Square(Rectangle):
         """
             Returns the dictionary representation of a Square
         """
-        return {id: getattr(self, "id"),
-                size: getattr(self, "width"),
-                x: getattr(self, "x"),
-                y: getattr(self, "y")}
+        return {'id': getattr(self, "id"),
+                'size': getattr(self, "width"),
+                'x': getattr(self, "x"),
+                'y': getattr(self, "y")}
