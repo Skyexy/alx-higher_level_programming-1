@@ -284,7 +284,7 @@ class TestRectangle(unittest.TestCase):
         r1 = Rectangle(1, 2, 0, 0, 345)
         r1_dict = r1.to_dictionary()
         self.assertEqual(r1_dict,
-                         {height: 2, width: 1, id: 345, x: 0, y: 0})
+                         {'height': 2, 'width': 1, 'id': 345, 'x': 0, 'y': 0})
 
     def test_missing_width(self):
         """
