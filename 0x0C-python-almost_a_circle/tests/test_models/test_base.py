@@ -65,8 +65,8 @@ class TestBaseClass(unittest.TestCase):
         """
             Initialise instance with id is dict
         """
-        b = Base({id: 12})
-        self.assertEqual({id: 12}, b.id)
+        b = Base({'id': 12})
+        self.assertEqual({'id': 12}, b.id)
 
     def test_to_json_type(self):
         """
@@ -109,7 +109,7 @@ class TestBaseClass(unittest.TestCase):
         json_dict = sq.to_dictionary()
         json_string = Base.to_json_string([json_dict])
         json_list = Base.from_json_string(json_string)
-        self.assertEqual(json_list, [{size: 1, x: 0, y: 0, id: 234}])
+        self.assertEqual(json_list, [{'size': 1, 'x': 0, 'y': 0, 'id': 234}])
 
     def test_from_json_none(self):
         """
